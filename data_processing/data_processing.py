@@ -23,3 +23,11 @@ class Data:
             Tuple[pd.DataFrame, pd.DataFrame]: digested files
         """
         return (pd.read_csv(self.x_train_path), pd.read_csv(self.y_train_path))
+
+    def pipeline(self) -> Tuple[pd.DataFrame, pd.DataFrame]:
+        """All the pipeline to digest the data
+
+        Returns:
+            Tuple[pd.DataFrame, pd.DataFrame]
+        """
+        return self.x_train, self.y_train
