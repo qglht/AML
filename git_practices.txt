@@ -1,0 +1,10 @@
+Common errors / bottlenecks:
+
+A. to revert to origin version of the git repository :
+
+git reset --hard [commit id] 
+git clean -d -f
+
+
+
+
